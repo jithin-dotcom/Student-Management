@@ -1,10 +1,4 @@
-<!-- <h2>Add Student</h2>
-<form action="/add" method="POST">
-  <input type="text" name="name" required placeholder="Name" />
-  <input type="number" name="age" required placeholder="Age" />
-  <input type="text" name="grade" required placeholder="Grade" />
-  <button>Add</button>
-</form> -->
+
 
 
 
@@ -104,6 +98,9 @@
 <body>
     <div class="container">
         <h2>Add Student</h2>
+        <% if(error){ %>
+            <p style="color: red;"> <%= error %> </p>
+        <% } %>
         <form action="/add" method="POST">
             <input type="text" name="name" required placeholder="Name" />
             <input type="number" name="age" required placeholder="Age" min="1" />
@@ -114,3 +111,73 @@
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Add Student</h2>
+<form action="/add" method="POST">
+  <input type="text" name="name" required placeholder="Name" />
+  <input type="number" name="age" required placeholder="Age" />
+  <input type="text" name="grade" required placeholder="Grade" />
+  <button>Add</button>
+</form> -->
